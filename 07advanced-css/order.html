@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kayden Nielson">
+    <meta name="description"
+        content="Learn how to paint table top miniatures, hire commission painters, and engage with the community.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="traveler.css">
+    <title>Place an Order</title>
+    <!-- Icon Here -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <!--Head-->
+    <header>
+        <img src="images/logo.png" alt="Logo for Fell Deeds and Paints" width="50" height="50">
+        <span>Fell Deeds and Paints</span>
+    </header>
+
+    <!--Navigation-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Fell Deeds and Paints</a></li>
+            <li><a href="commission.html">Commission Painters</a></li>
+            <li><a href="paint.html">How to Paint</a></li>
+            <li><a href="message.html">Message Board</a></li>
+            <li><a href="images.html">Images</a></li>
+            <li class="active"><a href="order.html">Place an Order</a></li>
+        </ul>
+    </nav>
+
+    <!--Content-->
+    <main>
+        <h1>Place an Order</h1>
+
+        <form method="get" class="order" action="thankyou.html">
+
+            <fieldset>
+                <legend>Client Information</legend>
+                <label>
+                    First Name*<input type="text" name="fname" required>
+                </label>
+                <label>
+                    Last Name*<input type="text" name="lname" required>
+                </label>
+                <label>
+                    Cell Phone Number*<input type="tel" name="phone" required placeholder="801-555-1234">
+                </label>
+                <label>
+                    Email*<input type="email" name="email" required>
+                </label>
+                <label>
+                    Address*<input type="text" name="address" required>
+                </label>
+                <label>
+                    City*<input type="text" name="city" required>
+                </label>
+                <label>State
+                    <select name="states">
+                        <option value="none">Select Option</option>
+                        <option value="alabama">Alabama</option>
+                        <option value="alaska">Alaska</option>
+                        <option value="arizona">Arizona</option>
+                        <option value="arkansas">Arkansas</option>
+                        <option value="california">California</option>
+                        <option value="colorado">Colorado</option>
+                        <option value="connecticut">Connecticut</option>
+                        <option value="delaware">Delaware</option>
+                        <option value="florida">Florida</option>
+                        <option value="georgia">Georgia</option>
+                        <option value="hawaii">Hawaii</option>
+                        <option value="idaho">Idaho</option>
+                        <option value="illinois">Illinois</option>
+                        <option value="indiana">Indiana</option>
+                        <option value="iowa">Iowa</option>
+                        <option value="kansas">Kansas</option>
+                        <option value="kentucky">Kentucky</option>
+                        <option value="louisiana">Louisiana</option>
+                        <option value="maine">Maine</option>
+                        <option value="maryland">Maryland</option>
+                        <option value="massachusetts">Massachusetts</option>
+                        <option value="michigan">Michigan</option>
+                        <option value="minnesota">Minnesota</option>
+                        <option value="mississippi">Mississippi</option>
+                        <option value="missouri">Missouri</option>
+                        <option value="montana">Montana</option>
+                        <option value="nebraska">Nebraska</option>
+                        <option value="nevada">Nevada</option>
+                        <option value="new-hampshire">New Hampshire</option>
+                        <option value="new-jersey">New Jersey</option>
+                        <option value="new-mexico">New Mexico</option>
+                        <option value="new-york">New York</option>
+                        <option value="north-carolina">North Carolina</option>
+                        <option value="north-dakota">North Dakota</option>
+                        <option value="ohio">Ohio</option>
+                        <option value="oklahoma">Oklahoma</option>
+                        <option value="oregon">Oregon</option>
+                        <option value="pennsylvania">Pennsylvania</option>
+                        <option value="rhode-island">Rhode Island</option>
+                        <option value="south-carolina">South Carolina</option>
+                        <option value="south-dakota">South Dakota</option>
+                        <option value="tennessee">Tennessee</option>
+                        <option value="texas">Texas</option>
+                        <option value="utah">Utah</option>
+                        <option value="vermont">Vermont</option>
+                        <option value="virginia">Virginia</option>
+                        <option value="washington">Washington</option>
+                        <option value="west-virginia">West Virginia</option>
+                        <option value="wisconsin">Wisconsin</option>
+                        <option value="wyoming">Wyoming</option>
+                    </select>
+                </label>
+                <label>
+                    Zip Code*<input type="text" name="zip" required>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Painter Options</legend>
+                <label>
+                    <input type="radio" name="method" value="who">Tabletop Order
+                </label>
+                <label>
+                    <input type="radio" name="method" value="who">Den of Imagination
+                </label>
+                <label>
+                    <input type="radio" name="method" value="who">Frontline Gaming Paint Studio
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Paint Quality</legend>
+                <label>
+                    <input type="checkbox" name="standard" value="checked"> Standard
+                </label>
+                <label>
+                    <input type="checkbox" name="advanced" value="checked"> Advanced
+                </label>
+                <label>
+                    <input type="checkbox" name="display" value="checked"> Display
+                </label>
+
+                <label>Models
+                    <select name="models">
+                        <option value="none">Please Select</option>
+                        <option value="rank">Rank and File</option>
+                        <option value="captain">Captains</option>
+                        <option value="hero">Heroes</option>
+                        <option value="monsters">Monsters</option>
+                        <option value="terrain">Terrain</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <label>Detailed Instructions
+                <textarea name="instructions" rows="5"
+                    placeholder="How do you want us to paint your models?"></textarea>
+            </label>
+
+            <input type="submit" value="Place Order">
+        </form>
+
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <p>&copy; 2026 &bull; Kayden Nielson &bull; Web Essentials</p>
+    </footer>
+
+
+</body>
+
+</html>
