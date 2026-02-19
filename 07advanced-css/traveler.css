@@ -1,0 +1,388 @@
+/* Prevent Problems on Different Browsers */
+* {box-sizing: border-box;}
+
+
+
+
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+}
+
+/* Colors
+White: #FFFFFF
+Off-White: #D2D2D9
+Blue: #003aaf
+Gray: #333333
+Red: #db333c
+Black: #000000
+*/
+
+/* Header */
+
+header {
+    background-color: #D2D2D9;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+header span {
+    color: #000;
+    font-weight: 700;
+    font-size: 2rem;
+}
+ /* Navigation */
+
+/* Small Screen Usability */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+        padding: .88rem;
+        color: #db333c;
+        text-decoration: none;
+        border-bottom: solid 1px #333;
+        font-weight: 700;
+    }
+    nav .active a {
+        background-color: #db333c;
+        color: #FFFFFF;
+        background-image: linear-gradient(to bottom, #db333c, #b5252c);
+    }
+}
+
+/* Large Screen Usability */
+@media only screen and (min-width: 600px) {
+nav {
+    background-color: #db333c;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0 10px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: .83rem 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: 700;
+}
+
+nav li.active a {
+    color: #ffffff;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+}
+
+/* Main Body */
+
+main {
+    padding: 1rem 10px;
+}
+
+main h1 {
+    color: #262626;
+}
+
+/* Images */
+
+.home-figure {
+    float: right;
+    width: 40%;
+    margin: 0 0 1rem 1.5rem;
+}
+
+.theoden {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    text-align: center;
+}
+
+figure .gallery {
+    width: 300px;
+    height: auto;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.gallery-container figure {
+    flex: 1 1 200px;
+    max-width: 300px;
+    margin: 0;
+}
+
+.gallery-container figure img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery-container figure img:hover {
+    box-shadow: 0px 0px 15px rgba(0, 58, 175, 0.5);
+}
+
+.gallery-container figure figcaption {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+}
+
+main h2 {
+    color: #262626;
+    margin-bottom: .2rem;
+}
+
+main p {
+    margin: .1rem;
+    color: #333;
+}
+
+main ol {
+    padding: .5rem 30px;
+    margin: 1rem 0;
+}
+
+main dl dt {
+    color: #262626;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+main dl dd {
+    color: #262626;
+    font-size: .9rem;
+    margin-left: 20px;
+}
+
+main ul {
+    list-style-type: circle;
+}
+
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    padding: .5rem;
+    width: 100%;
+    max-width: 300px;
+    overflow: auto;
+}
+
+main strong {
+    font-weight: 700;
+    color: #003aaf;
+}
+
+main em {
+    font-weight: 400;
+}
+
+main a {
+    color: #003aaf;
+}
+
+main a:hover {
+    color: #D2D2D9;
+}
+
+/* Orders Page */
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    color: #333333;
+}
+
+main h1 {
+    margin-bottom: 1.5rem;
+    color: #000000;
+}
+
+/* How to Paint Image */
+
+.hero {
+    width: 100%;
+    height: auto;
+}
+
+/* Fieldsets/legends */
+
+main fieldset {
+    border: 1px solid #333333;
+    border-radius: 6px;
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+    background-color: #FFFFFF;
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+main legend {
+    padding: 0 0.5rem;
+    font-weight: 600;
+    color: #333333;
+}
+
+/* Labels/Proximity */
+
+main label {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+main label input,
+main label select,
+main label textarea {
+    display: block;
+    margin-top: 0.35rem;
+}
+
+/* Inputs/Select/Textarea */
+
+main input[type="text"],
+main input[type="tel"],
+main input[type="email"],
+main select,
+main textarea {
+    width: 100%;
+    padding: 0.55rem;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #FFFFFF;
+    color: #333333;
+}
+
+main input:focus,
+main select:focus,
+main textarea:focus {
+    outline: none;
+    border-color: #003aaf;
+}
+
+/* Radio/Checkbox Alignment */
+
+main label:has(input[type="radio"]),
+main label:has(input[type="checkbox"]) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+}
+
+main input[type="radio"],
+main input[type="checkbox"] {
+    margin-right: 0;
+}
+
+/* Dropdown placement */
+
+main label:has(select) {
+    flex-basis: 100%;
+}
+
+/* Submit Button */
+
+main input[type="submit"] {
+    background-color: #db333c;
+    color: #FFFFFF;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    padding: 0.65rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+main input[type="submit"]:hover {
+    background-color: #003aaf;
+}
+
+main fieldset:first-of-type {
+    flex-direction: column;
+}
+
+main input[type="text"],
+main input[type="tel"],
+main input[type="email"],
+main select,
+main textarea {
+    background-color: rgba(219, 51, 60, 0.1);
+}
+
+.thankyou main {
+    text-align: center;
+}
+
+.thankyou main h1 {
+    font-size: 2.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.thankyou main h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.6;
+    max-width: 650px;
+    margin: 0 auto 2rem;
+    color: #333333;
+}
+
+.thankyou main img {
+    display: block;
+    margin: 1.5rem auto;
+}
+
+
+
+
+
+
+/* Footer */
+
+footer {
+    background-color: #D2D2D9;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: .8rem;
+    color: #262626;
+    clear: both;
+}
+
+footer p {
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+header, nav, main, footer {
+    max-width: 56rem;
+    margin: 0 auto;
+}
